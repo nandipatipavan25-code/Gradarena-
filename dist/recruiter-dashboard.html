@@ -214,6 +214,53 @@
       animation: shimmer 1.5s infinite;
     }
   </style>
+  <!-- Universal Image Fallback & Dummy Avatar Handler -->
+  <script>
+    (function() {
+      function getInitials(name) {
+        if (!name) return 'GA';
+        const parts = name.trim().split(/\s+/);
+        if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+        return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+      }
+
+      function createFallbackAvatar(name, size) {
+        const initials = getInitials(name);
+        const palette = ['#107acc', '#4f46e5', '#0d9488', '#e11d48', '#7c3aed', '#d97706'];
+        let hash = 0;
+        for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+        const bg = palette[Math.abs(hash) % palette.length];
+        const s = size || 100;
+        const fontSize = Math.round(s * 0.38);
+        const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + s + '" height="' + s + '" viewBox="0 0 ' + s + ' ' + s + '">' +
+          '<rect width="' + s + '" height="' + s + '" rx="' + Math.round(s * 0.22) + '" fill="' + bg + '"/>' +
+          '<text x="' + (s/2) + '" y="' + (s/2 + fontSize * 0.35) + '" font-family="Montserrat,-apple-system,BlinkMacSystemFont,sans-serif" font-size="' + fontSize + '" font-weight="600" fill="#ffffff" text-anchor="middle">' + initials + '</text>' +
+          '</svg>';
+        return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+      }
+
+      window.addEventListener('error', function(e) {
+        if (e.target && e.target.tagName === 'IMG') {
+          const img = e.target;
+          if (img.getAttribute('data-fallback-applied')) return;
+          img.setAttribute('data-fallback-applied', 'true');
+          const alt = img.getAttribute('alt') || 'User';
+          
+          if (img.src && (img.src.includes('webcam') || img.src.includes('room-scan') || alt.includes('Shot') || alt.includes('thumbnail') || alt.includes('Video'))) {
+            const svgMedia = '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="120" viewBox="0 0 200 120">' +
+              '<rect width="200" height="120" fill="#0f172a"/>' +
+              '<circle cx="100" cy="50" r="18" fill="#334155"/>' +
+              '<text x="100" y="88" font-family="Lato,-apple-system,sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="middle">' + alt + '</text>' +
+              '</svg>';
+            img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(svgMedia);
+          } else {
+            const w = img.clientWidth || img.width || 80;
+            img.src = createFallbackAvatar(alt, w);
+          }
+        }
+      }, true);
+    })();
+  </script>
 </head>
 
 <body class="bg-[#F8FAFC] text-slate-800 antialiased h-screen overflow-hidden flex">
@@ -1926,7 +1973,7 @@
                 <tr data-name="Kalyani Sundaram" data-email="kalyani@gaconsulting.in" data-test="Hardware Support (Tier 1)" data-score="74" class="hover:bg-slate-50/70 transition bg-blue-50/10">
                   <td class="p-3.5">
                     <div class="flex items-center gap-3">
-                      <img src="assets/candidate/kalyani-sundaram.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Kalyani" />
+                      <img src="assets/candidate/avatar-kalyani.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Kalyani" />
                       <div>
                         <span class="font-bold text-slate-900 hover:text-[#107acc] cursor-pointer block" onclick="switchScreen('candidate-eval')">Kalyani Sundaram</span>
                         <span class="text-[10px] text-slate-400 font-mono">CAND-8842</span>
@@ -1955,7 +2002,7 @@
                 <tr data-name="Nazeer Ahmed" data-email="nazeer@gadigitalsolutions.com" data-test="WEB APPLICATION 1" data-score="1" class="hover:bg-slate-50/70 transition">
                   <td class="p-3.5">
                     <div class="flex items-center gap-3">
-                      <img src="assets/candidate/nazeer-ahmed.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Nazeer" />
+                      <img src="assets/candidate/avatar-nazeer.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Nazeer" />
                       <div>
                         <span class="font-bold text-slate-900 hover:text-[#107acc] cursor-pointer block" onclick="switchScreen('candidate-eval')">Nazeer Ahmed</span>
                         <span class="text-[10px] text-slate-400 font-mono">CAND-8843</span>
@@ -2005,7 +2052,7 @@
                 <tr data-name="Pramod Motupalli" data-email="sunilgaconsulting@gmail.com" data-test="Accountant" data-score="32" class="hover:bg-slate-50/70 transition">
                   <td class="p-3.5">
                     <div class="flex items-center gap-3">
-                      <img src="assets/candidate/pramod-motupalli.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Pramod" />
+                      <img src="assets/candidate/avatar-pramod.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Pramod" />
                       <div>
                         <span class="font-bold text-slate-900 hover:text-[#107acc] cursor-pointer block" onclick="switchScreen('candidate-eval')">Pramod Motupalli</span>
                         <span class="text-[10px] text-slate-400 font-mono">CAND-8844</span>
@@ -2030,7 +2077,7 @@
                 <tr data-name="Manikanta Goud" data-email="manikantagoud8@gmail.com" data-test="Hardware Support (Tier 1)" data-score="0" class="hover:bg-slate-50/70 transition">
                   <td class="p-3.5">
                     <div class="flex items-center gap-3">
-                      <img src="assets/candidate/manikanta-goud.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Manikanta" />
+                      <img src="assets/candidate/avatar-manikanta.jpg" class="w-8 h-8 rounded-full object-cover border border-white shadow-xs" alt="Manikanta" />
                       <div>
                         <span class="font-bold text-slate-900 block">Manikanta Goud</span>
                         <span class="text-[10px] text-slate-400 font-mono">CAND-8845</span>
@@ -2091,7 +2138,7 @@
           
           <div class="flex items-center gap-5 relative z-10">
             <div class="relative">
-              <img src="assets/candidate/kalyani-sundaram.jpg" class="w-20 h-20 rounded-2xl object-cover border-2 border-white shadow-md" alt="Kalyani Sundaram" />
+              <img src="assets/candidate/avatar-kalyani.jpg" class="w-20 h-20 rounded-2xl object-cover border-2 border-white shadow-md" alt="Kalyani Sundaram" />
               <span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 border-2 border-white flex items-center justify-center text-white text-[10px] shadow-xs" title="Proctor Verified">✓</span>
             </div>
             <div class="space-y-1.5">
@@ -2800,7 +2847,7 @@
             <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3">
               
               <div onclick="openWebcamInspector(1, '4:23:00 PM', 'Normal', 'Face Identified (99.4%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 1" />
+                <img src="assets/candidate/webcam-1.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 1" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:00 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2808,7 +2855,7 @@
               </div>
 
               <div onclick="openWebcamInspector(2, '4:23:08 PM', 'Normal', 'Face Identified (99.1%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 2" />
+                <img src="assets/candidate/webcam-2.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 2" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:08 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2816,7 +2863,7 @@
               </div>
 
               <div onclick="openWebcamInspector(3, '4:23:16 PM', 'Caution', 'Looking Off Screen (3.2s)', 'Gaze Right 35°', '0.4dB Ambient')" class="rounded-xl overflow-hidden border-2 border-amber-400 bg-slate-900 text-white relative group cursor-pointer hover:scale-105 transition shadow-xs">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-85 group-hover:opacity-100 transition" alt="Shot 3" />
+                <img src="assets/candidate/webcam-3.jpg" class="w-full h-20 object-cover opacity-85 group-hover:opacity-100 transition" alt="Shot 3" />
                 <div class="absolute bottom-0 inset-x-0 bg-amber-950/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5 text-amber-300">
                   <span>4:23:16 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
@@ -2824,7 +2871,7 @@
               </div>
 
               <div onclick="openWebcamInspector(4, '4:23:24 PM', 'Normal', 'Face Identified (98.9%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 4" />
+                <img src="assets/candidate/webcam-4.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 4" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:24 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2832,7 +2879,7 @@
               </div>
 
               <div onclick="openWebcamInspector(5, '4:23:32 PM', 'Normal', 'Face Identified (99.6%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 5" />
+                <img src="assets/candidate/webcam-5.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 5" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:32 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2840,7 +2887,7 @@
               </div>
 
               <div onclick="openWebcamInspector(6, '4:23:40 PM', 'Normal', 'Face Identified (99.2%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 6" />
+                <img src="assets/candidate/webcam-6.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 6" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:40 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2848,7 +2895,7 @@
               </div>
 
               <div onclick="openWebcamInspector(7, '4:23:48 PM', 'Normal', 'Face Identified (99.5%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 7" />
+                <img src="assets/candidate/webcam-7.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 7" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:48 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2856,7 +2903,7 @@
               </div>
 
               <div onclick="openWebcamInspector(8, '4:23:56 PM', 'Normal', 'Face Identified (99.0%)', 'Gaze Center', '0.0dB Ambient')" class="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 text-white relative group cursor-pointer hover:border-[#107acc] transition">
-                <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 8" />
+                <img src="assets/candidate/webcam-8.jpg" class="w-full h-20 object-cover opacity-90 group-hover:opacity-100 transition" alt="Shot 8" />
                 <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 p-1 text-[9px] font-mono text-center flex items-center justify-between px-1.5">
                   <span>4:23:56 PM</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -2879,7 +2926,7 @@
                   <span class="text-emerald-600 font-semibold">✓ Verified Clear</span>
                 </div>
                 <div onclick="openVideoVerificationModal()" class="relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 aspect-video flex items-center justify-center group shadow-xs cursor-pointer">
-                  <img src="assets/candidate/kalyani-sundaram.jpg" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-300" alt="Video thumbnail" />
+                  <img src="assets/candidate/room-scan.jpg" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-300" alt="Video thumbnail" />
                   <div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
                     <div class="w-12 h-12 rounded-full bg-[#107acc] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
                       <svg class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -3433,7 +3480,7 @@ Additional Information:
               <div class="p-4 hover:bg-white/80 cursor-pointer space-y-1.5 transition-all">
                 <div class="flex items-center gap-3">
                   <div class="relative shrink-0">
-                    <img src="assets/candidate/kalyani-sundaram.jpg" class="w-10 h-10 rounded-2xl object-cover border border-slate-200" alt="Kalyani Sundaram" />
+                    <img src="assets/candidate/avatar-kalyani.jpg" class="w-10 h-10 rounded-2xl object-cover border border-slate-200" alt="Kalyani Sundaram" />
                     <span class="w-2.5 h-2.5 rounded-full bg-slate-400 border-2 border-white absolute -bottom-0.5 -right-0.5"></span>
                   </div>
                   <div class="flex-1 min-w-0">

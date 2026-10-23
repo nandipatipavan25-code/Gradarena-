@@ -27,6 +27,44 @@
       box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
     }
   </style>
+
+  <!-- Universal Image Fallback & Dummy Avatar Handler -->
+  <script>
+    (function() {
+      function getInitials(name) {
+        if (!name) return 'GA';
+        const parts = name.trim().split(/\s+/);
+        if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+        return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+      }
+
+      function createFallbackAvatar(name, size) {
+        const initials = getInitials(name);
+        const palette = ['#107acc', '#4f46e5', '#0d9488', '#e11d48', '#7c3aed', '#d97706'];
+        let hash = 0;
+        for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+        const bg = palette[Math.abs(hash) % palette.length];
+        const s = size || 100;
+        const fontSize = Math.round(s * 0.38);
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${s}" height="${s}" viewBox="0 0 ${s} ${s}">
+          <rect width="${s}" height="${s}" rx="${Math.round(s * 0.22)}" fill="${bg}"/>
+          <text x="${s/2}" y="${s/2 + fontSize * 0.35}" font-family="Montserrat,-apple-system,BlinkMacSystemFont,sans-serif" font-size="${fontSize}" font-weight="600" fill="#ffffff" text-anchor="middle">${initials}</text>
+        </svg>`;
+        return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+      }
+
+      window.addEventListener('error', function(e) {
+        if (e.target && e.target.tagName === 'IMG') {
+          const img = e.target;
+          if (img.getAttribute('data-fallback-applied')) return;
+          img.setAttribute('data-fallback-applied', 'true');
+          const alt = img.getAttribute('alt') || 'User';
+          const w = img.clientWidth || img.width || 80;
+          img.src = createFallbackAvatar(alt, w);
+        }
+      }, true);
+    })();
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased selection:bg-indigo-100 selection:text-indigo-900">
 
