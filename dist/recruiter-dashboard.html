@@ -8,7 +8,9 @@
   <!-- Google Fonts: Montserrat (Headings, Brand & Buttons) + Lato (Clean UI, Tables & Body) + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,11 +19,12 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Lato"', '"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
-            heading: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
+            sans: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['"Lora"', 'Georgia', 'serif'],
+            serif: ['"Lora"', 'Georgia', 'serif'],
             montserrat: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
-            lato: ['"Lato"', 'system-ui', '-apple-system', 'sans-serif'],
-            inter: ['"Lato"', 'system-ui', '-apple-system', 'sans-serif'],
+            lato: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
+            inter: ['"Montserrat"', 'system-ui', '-apple-system', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
@@ -58,12 +61,12 @@
 
   <style>
     :root {
-      --font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
-      --font-body: 'Lato', system-ui, -apple-system, sans-serif;
+      --font-heading: 'Lora', Georgia, 'Times New Roman', serif, system-ui, -apple-system, sans-serif;
+      --font-body: 'Montserrat', system-ui, -apple-system, sans-serif, system-ui, -apple-system, sans-serif;
     }
 
     body {
-      font-family: 'Lato', system-ui, -apple-system, sans-serif;
+      font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
       letter-spacing: -0.01em;
       background-color: #F5F6FA;
       color: #0F172A;
@@ -77,12 +80,17 @@
       background-attachment: fixed;
     }
 
-    /* Headings, Brand, Navigation, Metric labels and Action Buttons use Montserrat (Refined Semibold 600, strictly NO bold 700 or extra bold 800) */
+    /* Headings & Screen Titles use refined Lora Serif (Semibold 600, strictly NO bold 700 or extra bold 800) */
     h1, h2, h3, h4, h5, h6,
     .font-heading,
-    .brand-title,
     .screen-title {
-      font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+      font-family: 'Lora', Georgia, 'Times New Roman', serif !important;
+      font-weight: 600 !important;
+      letter-spacing: -0.015em;
+    }
+    .brand-title,
+    .brand-font {
+      font-family: 'Montserrat', system-ui, -apple-system, sans-serif !important;
       font-weight: 600;
       letter-spacing: -0.015em;
     }
@@ -712,40 +720,40 @@
                     <line x1="35" y1="145" x2="455" y2="145" stroke="#CBD5E1" />
 
                     <!-- Y-axis scale numbers -->
-                    <text x="5" y="24" font-size="9" fill="#94A3B8" font-family="'Lato', sans-serif">4,500</text>
-                    <text x="5" y="69" font-size="9" fill="#94A3B8" font-family="'Lato', sans-serif">3,000</text>
-                    <text x="5" y="114" font-size="9" fill="#94A3B8" font-family="'Lato', sans-serif">1,500</text>
-                    <text x="18" y="149" font-size="9" fill="#94A3B8" font-family="'Lato', sans-serif">0</text>
+                    <text x="5" y="24" font-size="9" fill="#94A3B8" font-family="'Montserrat', sans-serif">4,500</text>
+                    <text x="5" y="69" font-size="9" fill="#94A3B8" font-family="'Montserrat', sans-serif">3,000</text>
+                    <text x="5" y="114" font-size="9" fill="#94A3B8" font-family="'Montserrat', sans-serif">1,500</text>
+                    <text x="18" y="149" font-size="9" fill="#94A3B8" font-family="'Montserrat', sans-serif">0</text>
 
                     <!-- Month 1: Oct 2025 -->
                     <rect x="75" y="90" width="8" height="55" rx="4" fill="#00D284" class="hover:opacity-80 transition cursor-pointer" />
                     <rect x="87" y="45" width="8" height="100" rx="4" fill="#7C3AED" class="hover:opacity-80 transition cursor-pointer" />
-                    <text x="70" y="162" font-size="9" fill="#64748B" font-family="'Lato', sans-serif">Oct 2025</text>
+                    <text x="70" y="162" font-size="9" fill="#64748B" font-family="'Montserrat', sans-serif">Oct 2025</text>
 
                     <!-- Month 2: Nov 2025 -->
                     <rect x="140" y="70" width="8" height="75" rx="4" fill="#00D284" class="hover:opacity-80 transition cursor-pointer" />
                     <rect x="152" y="35" width="8" height="110" rx="4" fill="#7C3AED" class="hover:opacity-80 transition cursor-pointer" />
-                    <text x="135" y="162" font-size="9" fill="#64748B" font-family="'Lato', sans-serif">Nov 2025</text>
+                    <text x="135" y="162" font-size="9" fill="#64748B" font-family="'Montserrat', sans-serif">Nov 2025</text>
 
                     <!-- Month 3: Dec 2025 -->
                     <rect x="205" y="105" width="8" height="40" rx="4" fill="#00D284" class="hover:opacity-80 transition cursor-pointer" />
                     <rect x="217" y="20" width="8" height="125" rx="4" fill="#7C3AED" class="hover:opacity-80 transition cursor-pointer" />
-                    <text x="200" y="162" font-size="9" fill="#64748B" font-family="'Lato', sans-serif">Dec 2025</text>
+                    <text x="200" y="162" font-size="9" fill="#64748B" font-family="'Montserrat', sans-serif">Dec 2025</text>
 
                     <!-- Month 4: Jan 2026 -->
                     <rect x="270" y="95" width="8" height="50" rx="4" fill="#00D284" class="hover:opacity-80 transition cursor-pointer" />
                     <rect x="282" y="55" width="8" height="90" rx="4" fill="#7C3AED" class="hover:opacity-80 transition cursor-pointer" />
-                    <text x="265" y="162" font-size="9" fill="#64748B" font-family="'Lato', sans-serif">Jan 2026</text>
+                    <text x="265" y="162" font-size="9" fill="#64748B" font-family="'Montserrat', sans-serif">Jan 2026</text>
 
                     <!-- Month 5: Feb 2026 -->
                     <rect x="335" y="85" width="8" height="60" rx="4" fill="#00D284" class="hover:opacity-80 transition cursor-pointer" />
                     <rect x="347" y="48" width="8" height="97" rx="4" fill="#7C3AED" class="hover:opacity-80 transition cursor-pointer" />
-                    <text x="330" y="162" font-size="9" fill="#64748B" font-family="'Lato', sans-serif">Feb 2026</text>
+                    <text x="330" y="162" font-size="9" fill="#64748B" font-family="'Montserrat', sans-serif">Feb 2026</text>
 
                     <!-- Month 6: Mar 2026 -->
                     <rect x="400" y="78" width="8" height="67" rx="4" fill="#00D284" class="hover:opacity-80 transition cursor-pointer" />
                     <rect x="412" y="30" width="8" height="115" rx="4" fill="#7C3AED" class="hover:opacity-80 transition cursor-pointer" />
-                    <text x="395" y="162" font-size="9" fill="#64748B" font-family="'Lato', sans-serif">Mar 2026</text>
+                    <text x="395" y="162" font-size="9" fill="#64748B" font-family="'Montserrat', sans-serif">Mar 2026</text>
                   </svg>
                 </div>
               </div>
@@ -852,9 +860,9 @@
                 <line x1="20" y1="30" x2="275" y2="30" stroke="#F1F5F9" />
                 <line x1="20" y1="65" x2="275" y2="65" stroke="#F1F5F9" />
                 <line x1="20" y1="100" x2="275" y2="100" stroke="#F1F5F9" />
-                <text x="2" y="33" font-size="8" fill="#94A3B8" font-family="'Lato', sans-serif">150</text>
-                <text x="2" y="68" font-size="8" fill="#94A3B8" font-family="'Lato', sans-serif">100</text>
-                <text x="5" y="103" font-size="8" fill="#94A3B8" font-family="'Lato', sans-serif">50</text>
+                <text x="2" y="33" font-size="8" fill="#94A3B8" font-family="'Montserrat', sans-serif">150</text>
+                <text x="2" y="68" font-size="8" fill="#94A3B8" font-family="'Montserrat', sans-serif">100</text>
+                <text x="5" y="103" font-size="8" fill="#94A3B8" font-family="'Montserrat', sans-serif">50</text>
 
                 <!-- Area Fill -->
                 <path d="M 25 105 C 50 100, 65 70, 85 60 C 105 50, 120 90, 145 95 C 170 100, 185 45, 210 50 C 235 55, 255 60, 275 58 L 275 115 L 25 115 Z" fill="url(#coralWaveGradRecruiter)" />
