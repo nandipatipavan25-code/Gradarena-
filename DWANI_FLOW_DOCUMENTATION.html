@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwaani AI — Complete Flow & Architecture Specification</title>
+  <!-- Mermaid.js for dynamic vector rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+  <style>
+    :root {
+      --primary: #1e40af;
+      --primary-light: #dbeafe;
+      --secondary: #0f766e;
+      --accent: #7c3aed;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --warning-bg: #fef3c7;
+      --warning-border: #f59e0b;
+      --danger-bg: #fee2e2;
+      --danger-border: #ef4444;
+      --success-bg: #dcfce7;
+      --success-border: #22c55e;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      padding: 50px 60px;
+    }
+
+    .header-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: #fff;
+      padding: 36px 40px;
+      border-radius: 10px;
+      margin-bottom: 35px;
+    }
+    .header-banner h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px; }
+    .header-banner p { font-size: 15px; color: #e0e7ff; margin-bottom: 12px; }
+    .badge-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #1e3a8a;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 36px;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 16px;
+      color: #0f172a;
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 14px; font-size: 14.5px; color: var(--text); }
+    ul, ol { margin-left: 24px; margin-bottom: 16px; font-size: 14px; }
+    li { margin-bottom: 6px; }
+
+    .callout {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 13.5px;
+    }
+    .callout-title { font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13.5px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: #1e293b;
+      font-weight: 700;
+    }
+    tr:nth-child(even) { background: #fafafa; }
+
+    .diagram-container {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 25px 0;
+      overflow-x: auto;
+    }
+
+    .print-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #1e40af;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      box-shadow: 0 4px 15px rgba(30, 64, 175, 0.4);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .print-btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .container { box-shadow: none; border-radius: 0; padding: 0; max-width: 100%; }
+      .print-btn { display: none; }
+      @page { size: A4; margin: 15mm; }
+      h2 { page-break-after: avoid; }
+      table, .diagram-container, .callout { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">
+    🖨️ Print / Save as PDF
+  </button>
+
+  <div class="container">
+    
+    <div class="header-banner">
+      <h1>🎙️ DWAANI AI RECRUITMENT PLATFORM</h1>
+      <p>Autonomous AI Technical Screening & Assessment Suite — Architecture & Flow Specification</p>
+      <div class="badge-bar">
+        <span class="badge">Django 5.0 ASGI</span>
+        <span class="badge">React 19</span>
+        <span class="badge">Groq Llama-3-70B</span>
+        <span class="badge">Whisper-large-v3</span>
+        <span class="badge">PostgreSQL</span>
+        <span class="badge">Redis</span>
+      </div>
+    </div>
+
+    <h2>1. Executive Summary & Flow Architecture</h2>
+    <p>
+      <strong>Dwaani</strong> (InterviewAI) is an autonomous, full-stack, enterprise-grade AI technical screening platform 
+      engineered to replace manual, resource-heavy first-round technical screening calls with real-time, voice-enabled, 
+      adaptive conversational AI interviews.
+    </p>
+
+    <div class="diagram-container">
+      <div class="mermaid">
+flowchart LR
+    R[Recruiter] -->|1. Uploads JD & Resume| ATS[Groq ATS Engine]
+    ATS -->|2. ATS Match 0-100%| Inv[InviteCandidateView]
+    Inv -->|3. Magic Link & Temp Pass| Cand[Candidate]
+    Cand -->|4. 6-Stage System Check| Chamber[Active Chamber]
+    Chamber <-->|5. Real-time Audio STT| Groq[Groq Llama-3]
+    Groq -->|6. Parallel 3D Scoring| Resp[Response DB]
+    Resp -->|7. Live WebSocket Push| RecruiterHub[Live Monitoring]
+    Resp -->|8. Final Synthesis| Report[Executive Hiring Report]
+      </div>
+    </div>
+
+    <h2>2. Test & Assessment Creation Flow</h2>
+    <p>
+      The Test Creation lifecycle allows recruiters to define job requisitions, upload candidate resumes, 
+      execute real-time semantic ATS alignment evaluations, configure interview difficulty parameters, and issue 
+      cryptographic expirable credentials to applicants.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Implementation Details</th>
+          <th>Security & Lifecycle Properties</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Session Token</strong></td>
+          <td>Cryptographically secure UUID4 string</td>
+          <td>Unique per interview; indexed in database</td>
+        </tr>
+        <tr>
+          <td><strong>link1 (Candidate Link)</strong></td>
+          <td><code>https://dwaani.ai/interview/:session_token</code></td>
+          <td>Time-bound with 48-hour expiration (<code>link1_expiry</code>)</td>
+        </tr>
+        <tr>
+          <td><strong>link2 (Recruiter Link)</strong></td>
+          <td><code>https://dwaani.ai/recruiter/interviews/:token/track</code></td>
+          <td>Permanent recruiter audit & tracking link</td>
+        </tr>
+        <tr>
+          <td><strong>Temporary Password</strong></td>
+          <td>12-character randomized alphanumeric string</td>
+          <td>Argon2/PBKDF2 hash; flags <code>is_first_login = True</code></td>
+        </tr>
+        <tr>
+          <td><strong>Transactional Email</strong></td>
+          <td>SMTP HTML dispatch (<code>emails/invite_email.html</code>)</td>
+          <td>Delivers magic link and temporary login credentials</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-title">ATS Semantic Alignment Formula</div>
+      Dwaani's ATS engine calculates an objective 0–100% match score based on:
+      <strong>Technical Skills Overlap (40%)</strong> + 
+      <strong>Project Experience Depth (30%)</strong> + 
+      <strong>Architectural & Domain Fit (20%)</strong> + 
+      <strong>Educational Criteria (10%)</strong>.
+    </div>
+
+    <h2>3. Candidate Pre-Flight System Check Flow</h2>
+    <p>
+      To eliminate testing disruptions and verify environment authenticity, candidates complete a mandatory 
+      6-stage hardware, network, and consent checklist in <code>SystemCheck.jsx</code>:
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Stage #</th>
+          <th>Verification Target</th>
+          <th>Underlying Web API / Method</th>
+          <th>Enforcement Behavior</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. Camera Feed</strong></td>
+          <td>Webcam resolution & framerate</td>
+          <td><code>navigator.mediaDevices.getUserMedia({ video: true })</code></td>
+          <td>Required for proctoring capture</td>
+        </tr>
+        <tr>
+          <td><strong>2. Microphone Test</strong></td>
+          <td>Volume decibel meter & clarity</td>
+          <td>Singleton <code>AudioContext</code> & <code>ScriptProcessorNode</code></td>
+          <td>Blocks entry if mic level &lt; threshold</td>
+        </tr>
+        <tr>
+          <td><strong>3. Screen Sharing</strong></td>
+          <td>Display capture stream</td>
+          <td><code>navigator.mediaDevices.getDisplayMedia({ video: true })</code></td>
+          <td>Enforces desktop screen capture</td>
+        </tr>
+        <tr>
+          <td><strong>4. Network Latency</strong></td>
+          <td>RTT WebSocket ping benchmark</td>
+          <td>WebSocket round-trip ping to ASGI server</td>
+          <td>Warns if ping &gt; 250ms</td>
+        </tr>
+        <tr>
+          <td><strong>5. Biometric Consent</strong></td>
+          <td>AI proctoring terms agreement</td>
+          <td>Digital consent signature form</td>
+          <td>Mandatory legal acceptance</td>
+        </tr>
+        <tr>
+          <td><strong>6. Ready Room</strong></td>
+          <td>Lighting & position confirmation</td>
+          <td>Canvas face bounding box preview</td>
+          <td>Candidate confirms entry readiness</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Test Evaluation & Real-Time Interview Loop</h2>
+    <p>
+      The core interview engine operates as a concurrent, event-driven loop. Each answer submitted by the candidate 
+      is evaluated in real time across three explicit dimensions:
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Scoring Dimension</th>
+          <th>Weight</th>
+          <th>Evaluation Focus & Rubric</th>
+          <th>Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Relevance</strong></td>
+          <td><strong>33.3%</strong></td>
+          <td>Directly addresses core engineering prompt; penalizes evasive or off-topic responses.</td>
+          <td>0 – 100%</td>
+        </tr>
+        <tr>
+          <td><strong>Accuracy</strong></td>
+          <td><strong>33.3%</strong></td>
+          <td>Verifies domain correctness, architecture, realistic logic, and correct tooling.</td>
+          <td>0 – 100%</td>
+        </tr>
+        <tr>
+          <td><strong>Clarity</strong></td>
+          <td><strong>33.3%</strong></td>
+          <td>Assesses structured verbal delivery, conciseness, and professional articulation.</td>
+          <td>0 – 100%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-title">Parallel Concurrency via ThreadPoolExecutor</div>
+      When <code>SubmitAnswerView</code> receives an answer, it initiates two worker threads concurrently:
+      <br/>• <strong>Thread A:</strong> Computes 3D scores and qualitative feedback via <code>ai_service.evaluate_answer()</code>.
+      <br/>• <strong>Thread B:</strong> Synthesizes the next adaptive question via <code>ai_service.generate_next_question()</code>.
+      <br/>This slashes overall API turnaround latency by over <strong>55%</strong> (down to ~2.8 seconds).
+    </div>
+
+    <h3>Adaptive Question Difficulty Scaling</h3>
+    <ul>
+      <li><strong>Score &gt; 85%:</strong> Escalates to <em>Senior / Architect</em> questions probing distributed trade-offs, concurrency, and failure recovery.</li>
+      <li><strong>Score 60 – 85%:</strong> Asks <em>Intermediate</em> questions examining practical tooling, library choices, and project implementation.</li>
+      <li><strong>Score &lt; 60%:</strong> Smoothly pivots (<em>"Let's switch gears..."</em>) to <em>Foundational</em> definitions to verify core competencies.</li>
+      <li><strong>Zero Duplication:</strong> Actively checks against <code>question_bank</code> to strictly prohibit repetitive inquiries.</li>
+      <li><strong>Non-IT Role Guardrails:</strong> Suppresses software coding inquiries for Non-IT JDs (HR, Sales, Operations, Finance).</li>
+    </ul>
+
+    <h2>5. Multi-Layered Proctoring & Malpractice Engine</h2>
+    <p>
+      Dwaani continuously safeguards assessment authenticity:
+    </p>
+    <ul>
+      <li><strong>Tab-Switch Detection:</strong> Listens to <code>document.visibilitychange</code>; triggers snapshot captures when the candidate navigates away.</li>
+      <li><strong>Dual-Stream Canvas Blending:</strong> Simultaneously blends webcam and screen-sharing frames onto an HTML5 canvas and pushes snapshots to <code>LogAnomalyView</code>.</li>
+      <li><strong>Malpractice Abort:</strong> If critical cheating thresholds are breached, the session is terminated early, the score is set to 0, and the candidate is flagged as <code>Reject</code>.</li>
+    </ul>
+
+    <h2>6. Application Codebase & Component Structure</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Directory / File</th>
+          <th>Layer</th>
+          <th>Primary Responsibilities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>backend/ai_engine/models/interviews_models.py</code></td>
+          <td>Backend Models</td>
+          <td>Interview, Response, AnomalyLog, CandidateReview, Screening schema definitions.</td>
+        </tr>
+        <tr>
+          <td><code>backend/ai_engine/services/groq_service.py</code></td>
+          <td>AI Engine</td>
+          <td>Llama-3 prompt routing: ATS screening, 3D evaluation, next question generation.</td>
+        </tr>
+        <tr>
+          <td><code>backend/ai_engine/views/interviews_views.py</code></td>
+          <td>REST Endpoints</td>
+          <td>InviteCandidateView, SubmitAnswerView, generate_interview_report, GetResultsView.</td>
+        </tr>
+        <tr>
+          <td><code>backend/ai_engine/websockets/consumers.py</code></td>
+          <td>ASGI Channels</td>
+          <td>WebSocket live event broadcasting (answer_event, question_event) to recruiters.</td>
+        </tr>
+        <tr>
+          <td><code>frontend/src/pages/candidate/SystemCheck.jsx</code></td>
+          <td>Candidate UI</td>
+          <td>6-stage pre-flight hardware, microphone decibel test, and network check.</td>
+        </tr>
+        <tr>
+          <td><code>frontend/src/pages/candidate/Interview.jsx</code></td>
+          <td>Candidate UI</td>
+          <td>Voice-first active assessment chamber with fullscreen enforcement and proctoring.</td>
+        </tr>
+        <tr>
+          <td><code>frontend/src/pages/recruiter/Jobs.jsx</code></td>
+          <td>Recruiter UI</td>
+          <td>Job requisition management, resume upload, and candidate invitation engine.</td>
+        </tr>
+        <tr>
+          <td><code>frontend/src/pages/recruiter/LiveMonitoring.jsx</code></td>
+          <td>Recruiter UI</td>
+          <td>Real-time WebSocket observation hub displaying live transcripts and 3D dials.</td>
+        </tr>
+        <tr>
+          <td><code>frontend/src/pages/recruiter/ReportDetail.jsx</code></td>
+          <td>Recruiter UI</td>
+          <td>Comprehensive candidate scorecard, 3D radar dials, full transcript & PDF export.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-title">Financial Telemetry & INR Costing</div>
+      The platform integrates live USD-to-INR foreign exchange rates (<code>get_usd_to_inr_rate()</code>), 
+      calculating total inference token costs in <strong>Rupees (₹)</strong> (consistently tracked at ~₹10–15 per completed assessment).
+    </div>
+
+  </div>
+
+</body>
+</html>

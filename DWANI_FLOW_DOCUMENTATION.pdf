@@ -1,0 +1,2211 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>
+   /Contents 7 0 R
+>>
+endobj
+7 0 obj
+<< /Length 2650 >>
+stream
+q
+0.071 0.224 0.580 rg
+0.00 661.89 595.28 180.00 re
+f
+Q
+q
+0.250 0.550 1.000 rg
+0.00 655.89 595.28 6.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 22 Tf
+50.00 766.89 Td
+(DWAANI AI RECRUITMENT PLATFORM) Tj
+ET
+Q
+q
+0.850 0.920 1.000 rg
+BT
+/F1 13 Tf
+50.00 736.89 Td
+(Autonomous AI Technical Screening & Assessment Suite) Tj
+ET
+Q
+q
+0.600 0.800 1.000 rg
+BT
+/F2 11 Tf
+50.00 706.89 Td
+(COMPLETE FLOW & ARCHITECTURAL SPECIFICATION) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 597.89 4.00 18.00 re
+f
+Q
+q
+0.060 0.150 0.350 rg
+BT
+/F2 15 Tf
+62.00 601.89 Td
+(Document Meta Information) Tj
+ET
+Q
+q
+0.950 0.970 1.000 rg
+0.600 0.750 0.950 RG
+1.00 w
+50.00 452.89 495.28 125.00 re
+B
+Q
+q
+0.080 0.240 0.600 rg
+BT
+/F2 10 Tf
+62.00 562.89 Td
+(SYSTEM SPECIFICATION ATTRIBUTES) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 546.89 Td
+(\x95 Product Designation: Dwaani \(InterviewAI / DwaniAI\)) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 533.39 Td
+(\x95 Backend Architecture: Django 5.0, Django Channels \(ASGI\), Daphne, Redis Backplane) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 519.89 Td
+(\x95 Frontend Application: React 19, Vite 8, Tailwind CSS, Lucide Icons, CapacitorJS Mobile) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 506.39 Td
+(\x95 AI Engine Pipeline: Groq \(Llama-3-70B / gpt-oss-20b\), Whisper-large-v3, Deepgram Nova-3) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 492.89 Td
+(\x95 Database Architecture: PostgreSQL \(Neon.tech\) Relational Schema, In-Memory Redis Layer) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 479.39 Td
+(\x95 Document Scope: Test Creation, Test Evaluation, Proctoring Engine & Application Structure) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 465.89 Td
+(\x95 Release Status: Enterprise Edition 2.0 \(Confidential & Proprietary\)) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 422.89 Td
+(Executive Architecture Summary) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 419.89 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 400.00 Td
+(Dwaani is an autonomous recruitment and technical screening suite built to eliminate the massive) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 386.50 Td
+(bottlenecks of technical recruitment. It unifies resume extraction, semantic ATS alignment matching,) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 373.00 Td
+(voice-first adaptive technical interviews via WebSockets, 3-dimensional answer evaluation \(Relevance,) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 359.50 Td
+(Accuracy, Clarity\), multi-layered proctoring, and instant executive scorecards with live INR cost tracking.) Tj
+ET
+Q
+q
+0.950 0.970 1.000 rg
+0.600 0.750 0.950 RG
+1.00 w
+50.00 200.00 495.28 135.00 re
+B
+Q
+q
+0.080 0.240 0.600 rg
+BT
+/F2 10 Tf
+62.00 318.00 Td
+(SIX CORE SYSTEM PILLARS DETAILED IN THIS SPECIFICATION) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 300.00 Td
+(\x95 1. Test & Assessment Creation Flow: Job description ingestion, ATS matching, candidate invitation) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 286.00 Td
+(\x95 2. Candidate Onboarding: 6-stage hardware check \(AudioContext singleton, screen share, network RTT\)) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 272.00 Td
+(\x95 3. Adaptive Interview Chamber: Voice-first WebSockets, STT streaming, dynamic difficulty modulation) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 258.00 Td
+(\x95 4. Parallel Test Evaluation Engine: 3D scoring \(Relevance, Accuracy, Clarity\) via ThreadPoolExecutor) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 244.00 Td
+(\x95 5. Multi-Layered Proctoring: Tab-switch listeners, dual-frame canvas blending, anomaly thresholding) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 230.00 Td
+(\x95 6. Report Compilation & INR Telemetry: Candidate review, AI summary, PDF scorecard, token cost in INR) Tj
+ET
+Q
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>
+   /Contents 9 0 R
+>>
+endobj
+9 0 obj
+<< /Length 3250 >>
+stream
+q
+0.800 0.820 0.850 rg
+50.00 806.89 495.28 0.50 re
+f
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F2 8 Tf
+50.00 811.89 Td
+(DWAANI AI \x97 COMPLETE FLOW & ARCHITECTURAL SPECIFICATION) Tj
+ET
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F1 8 Tf
+400.00 811.89 Td
+(ENTERPRISE RECRUITMENT SUITE) Tj
+ET
+Q
+q
+0.800 0.820 0.850 rg
+50.00 35.00 495.28 0.50 re
+f
+Q
+q
+0.500 0.550 0.600 rg
+BT
+/F1 8 Tf
+50.00 24.00 Td
+(Confidential & Proprietary \x97 Dwani AI Architecture Blueprint) Tj
+ET
+Q
+q
+0.300 0.350 0.400 rg
+BT
+/F2 8 Tf
+510.00 24.00 Td
+(Page 2) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 762.89 4.00 18.00 re
+f
+Q
+q
+0.060 0.150 0.350 rg
+BT
+/F2 15 Tf
+62.00 766.89 Td
+(1. Test & Assessment Creation Flow) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 745.00 Td
+(The Test Creation phase enables recruiters to establish job requisitions, upload candidate resumes,) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 731.50 Td
+(execute real-time semantic ATS alignment evaluations, configure interview difficulty parameters, and issue) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 718.00 Td
+(secure expirable credentials to applicants.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 695.00 Td
+(1.1 Document Extraction & Semantic ATS Matching) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 692.00 495.28 0.50 re
+f
+Q
+q
+0.110 0.380 0.940 rg
+52.00 675.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 673.00 Td
+(Document Ingestion: Recruiter uploads Job Description \(JD\) and Candidate Resume \(PDF/DOCX\) via Jobs.jsx.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 659.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 657.00 Td
+(Text Pre-Processing: DocumentExtractor \(document_utils.py\) strips malformed bytes, control chars, font tables.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 643.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 641.00 Td
+(Groq ATS Engine: Sends sanitized JD & resume text to GroqAIService.process_screening\(\) running Llama-3.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 627.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 625.00 Td
+(Semantic Matching: Matches core tech stack \(40%\), experience depth \(30%\), architecture \(20%\), education \(10%\).) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 611.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 609.00 Td
+(Extraction Output: Yields verified skills array, candidate email/name, highlights, and ATS Score \(0-100%\).) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 585.00 Td
+(1.2 Candidate Account & Cryptographic Link Provisioning) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 582.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 566.00 Td
+(Upon recruiter approval of the extracted ATS match, the InviteCandidateView API endpoint orchestrates) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 552.50 Td
+(the candidate credentialing and session registration pipeline:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 520.00 495.00 18.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 8.5 Tf
+56.00 525.00 Td
+(Component) Tj
+156.00 525.00 Td
+(Implementation Details) Tj
+396.00 525.00 Td
+(Security & Expiry Parameters) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 502.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 507.00 Td
+(Session Token) Tj
+156.00 507.00 Td
+(Cryptographically secure UUID4 string) Tj
+396.00 507.00 Td
+(Unique across all platform interview records) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 484.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 489.00 Td
+(link1 \(Candidate\)) Tj
+156.00 489.00 Td
+(https://dwaani.ai/interview/:session_token) Tj
+396.00 489.00 Td
+(Time-bound with 48h expiry \(SESSION_LINK_EXPIRY\)) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 466.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 471.00 Td
+(link2 \(Recruiter\)) Tj
+156.00 471.00 Td
+(https://dwaani.ai/recruiter/interviews/:token/track) Tj
+396.00 471.00 Td
+(Permanent recruiter tracking link with audit trail) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 448.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 453.00 Td
+(Temp Password) Tj
+156.00 453.00 Td
+(12-char randomized alphanumeric string) Tj
+396.00 453.00 Td
+(Stored as Argon2/PBKDF2; is_first_login=True) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 430.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 435.00 Td
+(Email Notification) Tj
+156.00 435.00 Td
+(HTML template emails/invite_email.html) Tj
+396.00 435.00 Td
+(Dispatched via SMTP with credentials and magic links) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 412.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 417.00 Td
+(In-App Alerts) Tj
+156.00 417.00 Td
+(Notification model in PostgreSQL) Tj
+396.00 417.00 Td
+(Triggers alerts for Candidate Created & Invite Sent) Tj
+ET
+Q
+q
+0.950 0.970 1.000 rg
+0.600 0.750 0.950 RG
+1.00 w
+50.00 295.00 495.28 95.00 re
+B
+Q
+q
+0.080 0.240 0.600 rg
+BT
+/F2 10 Tf
+62.00 373.00 Td
+(TEST CREATION DATA FLOW SEQUENCE) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 355.00 Td
+(\x95 Recruiter uploads JD & Resume \x97> POST /screening/process/ \x97> DocumentExtractor \x97> Groq ATS) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 341.50 Td
+(\x95 Groq returns ATS Score \(0-100%\) & Profile JSON \x97> Recruiter sets num_questions \(default: 5\) & Schedule) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 328.00 Td
+(\x95 Recruiter clicks 'Invite' \x97> POST /api/v1/interviews/invite/ \x97> UUID session_token & temp password generated) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 314.50 Td
+(\x95 Interview model persisted with num_questions=5, ats_score, skills \x97> SMTP sends HTML email with magic link) Tj
+ET
+Q
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>
+   /Contents 11 0 R
+>>
+endobj
+11 0 obj
+<< /Length 3150 >>
+stream
+q
+0.800 0.820 0.850 rg
+50.00 806.89 495.28 0.50 re
+f
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F2 8 Tf
+50.00 811.89 Td
+(DWAANI AI \x97 COMPLETE FLOW & ARCHITECTURAL SPECIFICATION) Tj
+ET
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F1 8 Tf
+400.00 811.89 Td
+(ENTERPRISE RECRUITMENT SUITE) Tj
+ET
+Q
+q
+0.800 0.820 0.850 rg
+50.00 35.00 495.28 0.50 re
+f
+Q
+q
+0.500 0.550 0.600 rg
+BT
+/F1 8 Tf
+50.00 24.00 Td
+(Confidential & Proprietary \x97 Dwani AI Architecture Blueprint) Tj
+ET
+Q
+q
+0.300 0.350 0.400 rg
+BT
+/F2 8 Tf
+510.00 24.00 Td
+(Page 3) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 762.89 4.00 18.00 re
+f
+Q
+q
+0.060 0.150 0.350 rg
+BT
+/F2 15 Tf
+62.00 766.89 Td
+(2. Candidate Onboarding & Pre-Flight System Check) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 745.00 Td
+(Before candidates are permitted into the active assessment chamber, they must complete a rigorous) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 731.50 Td
+(6-stage hardware, biometric, and network verification flow implemented in SystemCheck.jsx. This prevents) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 718.00 Td
+(technical disruptions and verifies hardware readiness before the interview starts.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 685.00 495.00 18.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 8.5 Tf
+56.00 690.00 Td
+(Stage #) Tj
+101.00 690.00 Td
+(Check Name) Tj
+196.00 690.00 Td
+(Verification Method) Tj
+401.00 690.00 Td
+(Failure / Recovery Action) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 667.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 672.00 Td
+(Stage 1) Tj
+101.00 672.00 Td
+(Camera Feed) Tj
+196.00 672.00 Td
+(Webcam resolution & framerate test via getUserMedia\(\)) Tj
+401.00 672.00 Td
+(Prompts camera permission dialog) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 649.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 654.00 Td
+(Stage 2) Tj
+101.00 654.00 Td
+(Microphone Test) Tj
+196.00 654.00 Td
+(Singleton AudioContext & real-time volume decibel meter) Tj
+401.00 654.00 Td
+(Blocks entry if volume < threshold) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 631.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 636.00 Td
+(Stage 3) Tj
+101.00 636.00 Td
+(Screen Sharing) Tj
+196.00 636.00 Td
+(Acquires desktop stream via getDisplayMedia\(\)) Tj
+401.00 636.00 Td
+(Enforces fullscreen capture stream) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 613.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 618.00 Td
+(Stage 4) Tj
+101.00 618.00 Td
+(Network Ping) Tj
+196.00 618.00 Td
+(WebSocket RTT ping & bandwidth latency benchmark) Tj
+401.00 618.00 Td
+(Warns if latency exceeds 250ms) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 595.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 600.00 Td
+(Stage 5) Tj
+101.00 600.00 Td
+(Legal Consent) Tj
+196.00 600.00 Td
+(Digital signature of AI proctoring & data recording terms) Tj
+401.00 600.00 Td
+(Mandatory checkbox before entry) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 577.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 582.00 Td
+(Stage 6) Tj
+101.00 582.00 Td
+(Ready Room) Tj
+196.00 582.00 Td
+(Room lighting and head positioning alignment check) Tj
+401.00 582.00 Td
+(Confirms candidate is ready to enter) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 545.00 Td
+(2.1 AudioContext Singleton Architecture) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 542.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 526.00 Td
+(Standard web applications often fail voice assessments due to WebRTC microphone stream drops) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 512.50 Td
+(when switching routes. Dwaani solves this with a persistent singleton AudioContext architecture:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 493.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 491.00 Td
+(Singleton Pattern: AudioContext is instantiated once at root level and preserved across React page navigation.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 477.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 475.00 Td
+(Explicit Stream Separation: Video and audio streams are separated to prevent webcams overriding headset mics.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 461.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 459.00 Td
+(Linear PCM Chunks: Downsamples microphone audio to 16kHz mono Linear PCM for zero-latency STT ingestion.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 435.00 Td
+(2.2 Waiting Room & State Rehydration) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 432.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 416.00 Td
+(Upon completing the 6-stage check, candidates enter WaitingRoom.jsx featuring a synchronized countdown) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 402.50 Td
+(timer aligned to start_date and start_time. If a candidate accidentally reloads \(F5\) during an active) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 389.00 Td
+(assessment, interviewSession.js interrogates GetInterviewSessionView to rehydrate the exact question) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 375.50 Td
+(index and previous answers without resetting progress.) Tj
+ET
+Q
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>
+   /Contents 13 0 R
+>>
+endobj
+13 0 obj
+<< /Length 3400 >>
+stream
+q
+0.800 0.820 0.850 rg
+50.00 806.89 495.28 0.50 re
+f
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F2 8 Tf
+50.00 811.89 Td
+(DWAANI AI \x97 COMPLETE FLOW & ARCHITECTURAL SPECIFICATION) Tj
+ET
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F1 8 Tf
+400.00 811.89 Td
+(ENTERPRISE RECRUITMENT SUITE) Tj
+ET
+Q
+q
+0.800 0.820 0.850 rg
+50.00 35.00 495.28 0.50 re
+f
+Q
+q
+0.500 0.550 0.600 rg
+BT
+/F1 8 Tf
+50.00 24.00 Td
+(Confidential & Proprietary \x97 Dwani AI Architecture Blueprint) Tj
+ET
+Q
+q
+0.300 0.350 0.400 rg
+BT
+/F2 8 Tf
+510.00 24.00 Td
+(Page 4) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 762.89 4.00 18.00 re
+f
+Q
+q
+0.060 0.150 0.350 rg
+BT
+/F2 15 Tf
+62.00 766.89 Td
+(3. Test Evaluation & Real-Time Interview Loop) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 745.00 Td
+(The evaluation engine operates as a concurrent, event-driven loop. Each answer submitted by the candidate) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 731.50 Td
+(is immediately evaluated across three distinct cognitive dimensions while simultaneously generating the next) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 718.00 Td
+(dynamically scaled technical inquiry.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 695.00 Td
+(3.1 Rigorous 3-Dimensional Answer Scoring) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 692.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 676.00 Td
+(In groq_service.py, the evaluate_answer\(\) method evaluates the verbatim candidate response) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 662.50 Td
+(against the question text using a supportive yet thorough technical rubric:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 635.00 495.00 18.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 8.5 Tf
+56.00 640.00 Td
+(Scoring Dimension) Tj
+156.00 640.00 Td
+(Weight) Tj
+206.00 640.00 Td
+(Rubric & Evaluation Focus) Tj
+466.00 640.00 Td
+(Score Range) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 617.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 622.00 Td
+(Relevance) Tj
+156.00 622.00 Td
+(33.3%) Tj
+206.00 622.00 Td
+(Addresses core engineering problem; penalizes evasive rambling) Tj
+466.00 622.00 Td
+(0 - 100%) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 599.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 604.00 Td
+(Accuracy) Tj
+156.00 604.00 Td
+(33.3%) Tj
+206.00 604.00 Td
+(Verifies domain correctness, architecture, realistic logic & syntax) Tj
+466.00 604.00 Td
+(0 - 100%) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 581.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 586.00 Td
+(Clarity) Tj
+156.00 586.00 Td
+(33.3%) Tj
+206.00 586.00 Td
+(Assesses structured delivery, conciseness & verbal articulation) Tj
+466.00 586.00 Td
+(0 - 100%) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 563.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 568.00 Td
+(Overall Score) Tj
+156.00 568.00 Td
+(Composite) Tj
+206.00 568.00 Td
+(Calculated mean score across all 3 dimensions + feedback sentence) Tj
+466.00 568.00 Td
+(0 - 100%) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 535.00 Td
+(3.2 Parallel Concurrency via ThreadPoolExecutor) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 532.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 516.00 Td
+(To minimize candidate latency between questions, SubmitAnswerView leverages Python's) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 502.50 Td
+(concurrent.futures.ThreadPoolExecutor to execute two intensive operations in parallel:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 483.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 481.00 Td
+(Worker Thread A: Executes ai_service.evaluate_answer\(\) to compute 3D scores and qualitative feedback.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 467.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 465.00 Td
+(Worker Thread B: Executes ai_service.generate_next_question\(\) to synthesize the subsequent question.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 451.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 449.00 Td
+(Turnaround Latency: Slashes total API roundtrip latency from ~6.2 seconds down to ~2.8 seconds.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 425.00 Td
+(3.3 Adaptive Question Difficulty Scaling) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 422.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 406.00 Td
+(The AI interviewer dynamically tunes question complexity according to the candidate's demonstrated mastery:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 387.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 385.00 Td
+(Previous Score > 85%: Senior Level: Probes distributed trade-offs, concurrency, scaling edge cases.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 371.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 369.00 Td
+(Previous Score 60 - 85%: Intermediate Level: Investigates practical tooling decisions, implementation details.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 355.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 353.00 Td
+(Previous Score < 60%: Foundational Level: Pivots smoothly \('Let's switch gears...'\) to core definitions.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 339.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 337.00 Td
+(Anti-Duplication Filter: Maintains question_bank in memory; explicitly forbids repeating questions.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 323.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 321.00 Td
+(Non-IT Role Boundaries: For non-technical roles, strictly suppresses coding questions; focuses on domain.) Tj
+ET
+Q
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>
+   /Contents 15 0 R
+>>
+endobj
+15 0 obj
+<< /Length 3300 >>
+stream
+q
+0.800 0.820 0.850 rg
+50.00 806.89 495.28 0.50 re
+f
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F2 8 Tf
+50.00 811.89 Td
+(DWAANI AI \x97 COMPLETE FLOW & ARCHITECTURAL SPECIFICATION) Tj
+ET
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F1 8 Tf
+400.00 811.89 Td
+(ENTERPRISE RECRUITMENT SUITE) Tj
+ET
+Q
+q
+0.800 0.820 0.850 rg
+50.00 35.00 495.28 0.50 re
+f
+Q
+q
+0.500 0.550 0.600 rg
+BT
+/F1 8 Tf
+50.00 24.00 Td
+(Confidential & Proprietary \x97 Dwani AI Architecture Blueprint) Tj
+ET
+Q
+q
+0.300 0.350 0.400 rg
+BT
+/F2 8 Tf
+510.00 24.00 Td
+(Page 5) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 762.89 4.00 18.00 re
+f
+Q
+q
+0.060 0.150 0.350 rg
+BT
+/F2 15 Tf
+62.00 766.89 Td
+(4. Proctoring, Live Monitoring & Report Synthesis) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 735.00 Td
+(4.1 Multi-Layered Proctoring & Malpractice Detection) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 732.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 716.00 Td
+(Dwaani enforces an active integrity guardrail throughout the entire assessment session to prevent) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 702.50 Td
+(unauthorized collaboration, multi-tab browsing, or generative AI cheating:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 683.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 681.00 Td
+(Tab-Switch Detection: Listens to document.visibilitychange events; flags tab transitions or minimized windows.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 667.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 665.00 Td
+(Dual-Frame Canvas Blending: Captures webcam & shared screen frames; blends them onto HTML5 canvas.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 651.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 649.00 Td
+(Anomaly Logging: Pushes snapshots to LogAnomalyView with severity classification \('low', 'medium', 'high'\).) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 635.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 633.00 Td
+(Malpractice Abort Trigger: On excessive violations, status shifts to 'malpractice', forcing score=0 and Reject.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 605.00 Td
+(4.2 Recruiter Live Monitoring Command Center) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 602.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 586.00 Td
+(Recruiters can observe live interviews in real-time via LiveMonitoring.jsx connected to) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 572.50 Td
+(Django Channels WebSocket endpoint ws/interview/<session_token>/. Live events include:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 553.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 551.00 Td
+(Live Q&A Stream: Broadcasts each question and candidate spoken answer in real time.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 537.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 535.00 Td
+(Instant 3D Telemetry: Displays live Relevance, Accuracy, and Clarity score dials upon answer submission.) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+52.00 521.00 4.00 4.00 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9 Tf
+64.00 519.00 Td
+(Proctoring Alerts: Displays real-time anomaly snapshots whenever focus changes or tab-switches occur.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 490.00 Td
+(4.3 Final Report Compilation & INR Cost Telemetry) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 487.00 495.28 0.50 re
+f
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 471.00 Td
+(Upon session completion, generate_interview_report\(\) compiles the comprehensive hiring scorecard:) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 440.00 495.00 18.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 8.5 Tf
+56.00 445.00 Td
+(Report Section) Tj
+206.00 445.00 Td
+(Contents & Analytic Purpose) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 422.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 427.00 Td
+(Candidate Profile) Tj
+206.00 427.00 Td
+(Verified candidate name, email, job title, assessment timestamp, and ATS score) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 404.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 409.00 Td
+(3D Radar Breakdown) Tj
+206.00 409.00 Td
+(Visual metric breakdown across Relevance, Accuracy, and Clarity for all 5 questions) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 386.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 391.00 Td
+(Executive Summary) Tj
+206.00 391.00 Td
+(A concise 2-3 sentence overview of candidate problem-solving and communication depth) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 368.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 373.00 Td
+(Verified Strengths) Tj
+206.00 373.00 Td
+(Explicit list of engineering strengths, design patterns, and competencies proven) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 350.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 355.00 Td
+(Vulnerabilities) Tj
+206.00 355.00 Td
+(Identified knowledge gaps, inaccurate answers, or hand-waving detected by AI) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 332.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 337.00 Td
+(Hiring Recommendation) Tj
+206.00 337.00 Td
+(Clear, actionable recommendation: 'Hire', 'Reject', or 'Maybe') Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 314.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 319.00 Td
+(INR Financial Telemetry) Tj
+206.00 319.00 Td
+(Live USD-to-INR API rate calculating exact token inference cost \(INR 10-15 per candidate\)) Tj
+ET
+Q
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>
+   /Contents 17 0 R
+>>
+endobj
+17 0 obj
+<< /Length 3450 >>
+stream
+q
+0.800 0.820 0.850 rg
+50.00 806.89 495.28 0.50 re
+f
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F2 8 Tf
+50.00 811.89 Td
+(DWAANI AI \x97 COMPLETE FLOW & ARCHITECTURAL SPECIFICATION) Tj
+ET
+Q
+q
+0.400 0.450 0.500 rg
+BT
+/F1 8 Tf
+400.00 811.89 Td
+(ENTERPRISE RECRUITMENT SUITE) Tj
+ET
+Q
+q
+0.800 0.820 0.850 rg
+50.00 35.00 495.28 0.50 re
+f
+Q
+q
+0.500 0.550 0.600 rg
+BT
+/F1 8 Tf
+50.00 24.00 Td
+(Confidential & Proprietary \x97 Dwani AI Architecture Blueprint) Tj
+ET
+Q
+q
+0.300 0.350 0.400 rg
+BT
+/F2 8 Tf
+510.00 24.00 Td
+(Page 6) Tj
+ET
+Q
+q
+0.110 0.380 0.940 rg
+50.00 762.89 4.00 18.00 re
+f
+Q
+q
+0.060 0.150 0.350 rg
+BT
+/F2 15 Tf
+62.00 766.89 Td
+(5. Application Architecture & Component Structure) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 745.00 Td
+(The Dwaani platform is engineered with a clean, decoupled full-stack architecture separating backend) Tj
+ET
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 9.5 Tf
+50.00 731.50 Td
+(micro-services from the unified React presentation layer.) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 705.00 Td
+(5.1 Backend Django 5.0 Apps & Model Mapping) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 702.00 495.28 0.50 re
+f
+Q
+q
+0.110 0.380 0.940 rg
+50.00 668.00 495.00 18.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 8.5 Tf
+56.00 673.00 Td
+(Module / File) Tj
+206.00 673.00 Td
+(Architectural Role) Tj
+356.00 673.00 Td
+(Key Entities & Methods) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 650.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 655.00 Td
+(models/interviews_models.py) Tj
+206.00 655.00 Td
+(Data persistence for sessions) Tj
+356.00 655.00 Td
+(Interview, Response, AnomalyLog, Review, Screening) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 632.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 637.00 Td
+(models/reports_models.py) Tj
+206.00 637.00 Td
+(Compiled hiring scorecards) Tj
+356.00 637.00 Td
+(Report \(overall_score, strengths, weaknesses\)) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 614.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 619.00 Td
+(services/groq_service.py) Tj
+206.00 619.00 Td
+(AI Prompt routing & LLM calls) Tj
+356.00 619.00 Td
+(GroqAIService: process_screening, evaluate_answer) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 596.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 601.00 Td
+(views/interviews_views.py) Tj
+206.00 601.00 Td
+(Core API logic & orchestration) Tj
+356.00 601.00 Td
+(InviteCandidateView, SubmitAnswerView, generate_report) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 578.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 583.00 Td
+(views/screening_views.py) Tj
+206.00 583.00 Td
+(Resume & JD ingestion) Tj
+356.00 583.00 Td
+(Uploads files, triggers DocumentExtractor & ATS) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 560.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 565.00 Td
+(websockets/consumers.py) Tj
+206.00 565.00 Td
+(ASGI Channel layer) Tj
+356.00 565.00 Td
+(Broadcasts answer_event & question_event to clients) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 542.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 547.00 Td
+(websockets/stt_consumer.py) Tj
+206.00 547.00 Td
+(Streaming Speech-to-Text) Tj
+356.00 547.00 Td
+(Processes 16kHz linear PCM audio chunks over WS) Tj
+ET
+Q
+q
+0.120 0.230 0.530 rg
+BT
+/F2 12 Tf
+50.00 515.00 Td
+(5.2 Frontend React 19 Unified Portal Mapping) Tj
+ET
+Q
+q
+0.850 0.880 0.920 rg
+50.00 512.00 495.28 0.50 re
+f
+Q
+q
+0.110 0.380 0.940 rg
+50.00 480.00 495.00 18.00 re
+f
+Q
+q
+1.000 1.000 1.000 rg
+BT
+/F2 8.5 Tf
+56.00 485.00 Td
+(Component File) Tj
+216.00 485.00 Td
+(User Persona) Tj
+301.00 485.00 Td
+(Functionality & User Interface Role) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 462.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 467.00 Td
+(pages/recruiter/Jobs.jsx) Tj
+216.00 467.00 Td
+(Recruiter) Tj
+301.00 467.00 Td
+(Job CRUD, JD upload, resume ingestion & invite engine) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 444.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 449.00 Td
+(pages/recruiter/LiveMonitoring.jsx) Tj
+216.00 449.00 Td
+(Recruiter) Tj
+301.00 449.00 Td
+(Real-time WebSocket observation hub for live sessions) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 426.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 431.00 Td
+(pages/recruiter/ReportDetail.jsx) Tj
+216.00 431.00 Td
+(Recruiter) Tj
+301.00 431.00 Td
+(In-depth scorecard, 3D radar dials, transcript & PDF) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 408.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 413.00 Td
+(pages/candidate/SystemCheck.jsx) Tj
+216.00 413.00 Td
+(Candidate) Tj
+301.00 413.00 Td
+(6-stage hardware check: camera, mic, screen share, ping) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 390.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 395.00 Td
+(pages/candidate/WaitingRoom.jsx) Tj
+216.00 395.00 Td
+(Candidate) Tj
+301.00 395.00 Td
+(Synchronized countdown timer leading to slot start) Tj
+ET
+Q
+q
+0.970 0.980 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 372.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 377.00 Td
+(pages/candidate/Interview.jsx) Tj
+216.00 377.00 Td
+(Candidate) Tj
+301.00 377.00 Td
+(Voice-first active chamber with fullscreen lock & proctoring) Tj
+ET
+Q
+q
+1.000 1.000 1.000 rg
+0.880 0.900 0.940 RG
+0.50 w
+50.00 354.00 495.00 18.00 re
+B
+Q
+q
+0.150 0.180 0.220 rg
+BT
+/F1 8 Tf
+56.00 359.00 Td
+(pages/candidate/Feedback.jsx) Tj
+216.00 359.00 Td
+(Candidate) Tj
+301.00 359.00 Td
+(Post-interview review submission \(1-5 stars & comments\)) Tj
+ET
+Q
+q
+0.950 0.970 1.000 rg
+0.600 0.750 0.950 RG
+1.00 w
+50.00 240.00 495.28 95.00 re
+B
+Q
+q
+0.080 0.240 0.600 rg
+BT
+/F2 10 Tf
+62.00 318.00 Td
+(BLUEPRINT VERIFICATION & REPOSITORY SUMMARY) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 300.00 Td
+(\x95 End-to-end architecture verified against production repository codebase.) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 286.50 Td
+(\x95 Zero mock placeholders: all endpoints, models, prompt structures, and components are fully implemented.) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 273.00 Td
+(\x95 Standalone Mermaid architecture diagram available in DWANI_COMPLETE_FLOW.mmd.) Tj
+ET
+Q
+q
+0.150 0.200 0.280 rg
+BT
+/F1 8.5 Tf
+66.00 259.50 Td
+(\x95 Full markdown specification document available in DWANI_FLOW_DOCUMENTATION.md.) Tj
+ET
+Q
+endstream
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000068 00000 n 
+0000000166 00000 n 
+0000000256 00000 n 
+0000000351 00000 n 
+0000000440 00000 n 
+0000000642 00000 n 
+0000003360 00000 n 
+0000003562 00000 n 
+0000006880 00000 n 
+0000007083 00000 n 
+0000010301 00000 n 
+0000010504 00000 n 
+0000013972 00000 n 
+0000014175 00000 n 
+0000017543 00000 n 
+0000017746 00000 n 
+trailer
+<< /Size 18
+   /Root 1 0 R
+>>
+startxref
+21264
+%%EOF
