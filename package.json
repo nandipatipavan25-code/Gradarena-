@@ -1,0 +1,20 @@
+{
+  "name": "gradarena",
+  "version": "1.0.0",
+  "description": "GradArena Enterprise Talent Assessment & Hiring Platform",
+  "main": "server.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js",
+    "local": "node local_server.js"
+  },
+  "keywords": [
+    "gradarena",
+    "recruitment",
+    "ai",
+    "assessment",
+    "dwaani"
+  ],
+  "author": "GradArena Team",
+  "license": "ISC"
+}

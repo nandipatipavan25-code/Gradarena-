@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gradarena-platform
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /manager
+        destination: /manager-panel.html
+      - type: rewrite
+        source: /recruiter
+        destination: /recruiter-panel.html

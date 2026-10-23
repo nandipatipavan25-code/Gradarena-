@@ -1,0 +1,6 @@
+# Render Static Site Redirects & Route Rewrites
+/manager        /manager-panel.html       200
+/manager/       /manager-panel.html       200
+/recruiter      /recruiter-panel.html     200
+/recruiter/     /recruiter-panel.html     200
+/dossier        /recruiter-panel.html?screen=candidate-eval  200
