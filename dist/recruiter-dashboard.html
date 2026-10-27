@@ -221,6 +221,26 @@
       background-size: 200% 100%;
       animation: shimmer 1.5s infinite;
     }
+  
+    /* Universal Badge, Status Pill & Button Alignment Rules */
+        /* Universal Badge, Tag, Pill & Metric Chip wrap and squeeze protection */
+    .rounded-full, [class*="rounded-full"],
+    [class*="rounded-md"][class*="px-"][class*="py-"],
+    [class*="rounded-lg"][class*="px-"][class*="py-"],
+    [class*="rounded"][class*="px-"][class*="py-"],
+    .badge-pill, .status-pill, .badge, .tag, [class*="badge"], [class*="tag"] {
+      flex-shrink: 0 !important;
+      white-space: nowrap !important;
+    }
+    .badge-pill, .status-pill { display: inline-flex !important; align-items: center !important; }
+    .badge-pill,
+    .status-pill {
+      flex-shrink: 0 !important;
+      white-space: nowrap !important;
+      display: inline-flex !important;
+      align-items: center !important;
+    }
+
   </style>
   <!-- Universal Image Fallback & Dummy Avatar Handler -->
   <script>
@@ -692,7 +712,7 @@
           
           <!-- Card 1: Completions vs. Shortlisted Trend (2 cols wide) -->
           <div class="lg:col-span-2 premium-card p-6 flex flex-col justify-between">
-            <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
               <div>
                 <h3 class="text-xs font-semibold text-slate-900 tracking-tight">Candidate Completions vs. Shortlisted Trend</h3>
                 <p class="text-[11px] text-slate-400">Monthly applicant intake and shortlisting ratio across all assessments</p>
@@ -795,7 +815,7 @@
 
           <!-- Card 2: Proctoring Modality & Integrity Donut (1 col wide, directly matching Image 1) -->
           <div class="premium-card p-6 flex flex-col justify-between">
-            <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
               <div>
                 <h3 class="text-xs font-semibold text-slate-900 tracking-tight">Proctoring by Modality</h3>
                 <p class="text-[11px] text-slate-400">Webcam vs. Voice AI Verification</p>
@@ -980,7 +1000,7 @@
           <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 pb-2 border-b border-slate-100">
             <div class="flex items-center gap-3">
               <h3 class="text-xs font-semibold text-slate-900 tracking-tight">Active Assessments Pipeline</h3>
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-[#107acc]">30 Tests</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 text-[#107acc] shrink-0 whitespace-nowrap">30 Tests</span>
             </div>
             
             <div class="flex items-center gap-2">
@@ -988,7 +1008,7 @@
                 <input id="dashboardSearchInput" type="text" oninput="filterDashboardRecentTests(this.value)" placeholder="Search assessments..." class="pl-8 pr-4 py-1.5 text-[10px] bg-slate-50 rounded-xl border border-slate-200/80 focus:outline-none focus:ring-2 focus:ring-[#107acc]/20 focus:bg-white transition" />
                 <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
               </div>
-              <button onclick="switchScreen('my-tests')" class="px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-[#107acc] font-bold text-[10px] transition">
+              <button onclick="switchScreen('my-tests')" class="px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-[#107acc] font-bold text-[10px] transition shrink-0 whitespace-nowrap">
                 View All ➔
               </button>
             </div>

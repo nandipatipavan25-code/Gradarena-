@@ -225,6 +225,26 @@
     .animate-donut {
       animation: donutDash 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
+  
+    /* Universal Badge, Status Pill & Button Alignment Rules */
+        /* Universal Badge, Tag, Pill & Metric Chip wrap and squeeze protection */
+    .rounded-full, [class*="rounded-full"],
+    [class*="rounded-md"][class*="px-"][class*="py-"],
+    [class*="rounded-lg"][class*="px-"][class*="py-"],
+    [class*="rounded"][class*="px-"][class*="py-"],
+    .badge-pill, .status-pill, .badge, .tag, [class*="badge"], [class*="tag"] {
+      flex-shrink: 0 !important;
+      white-space: nowrap !important;
+    }
+    .badge-pill, .status-pill { display: inline-flex !important; align-items: center !important; }
+    .badge-pill,
+    .status-pill {
+      flex-shrink: 0 !important;
+      white-space: nowrap !important;
+      display: inline-flex !important;
+      align-items: center !important;
+    }
+
   </style>
   <!-- Universal Image Fallback & Dummy Avatar Handler -->
   <script>
@@ -827,10 +847,10 @@
           <div class="lg:col-span-7 premium-card p-6 space-y-4">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
-                <h3 class="text-base font-semibold text-slate-900">Active Organization Assessments</h3>
+                <h3 class="text-xs font-semibold text-slate-900 tracking-tight">Active Organization Assessments</h3>
                 <p class="text-[10px] text-slate-400">Live assessments currently receiving candidate attempts</p>
               </div>
-              <button onclick="switchScreen('test-create')" class="px-3.5 py-1.5 rounded-xl bg-[#107acc] hover:bg-[#0c68ab] text-white text-[10px] font-bold transition flex items-center gap-1.5 shadow-xs">
+              <button onclick="switchScreen('test-create')" class="px-3.5 py-1.5 rounded-xl bg-[#107acc] hover:bg-[#0c68ab] text-white text-[10px] font-bold transition flex items-center gap-1.5 shadow-xs shrink-0 whitespace-nowrap">
                 <span>+ Create Test</span>
               </button>
             </div>
@@ -889,10 +909,10 @@
           <div class="lg:col-span-5 premium-card p-6 space-y-4">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
-                <h3 class="text-base font-semibold text-slate-900">Test Creator Leaders</h3>
+                <h3 class="text-xs font-semibold text-slate-900 tracking-tight">Test Creator Leaders</h3>
                 <p class="text-[10px] text-slate-400">Organizational review velocity</p>
               </div>
-              <button onclick="switchScreen('creators')" class="text-[10px] font-bold text-[#107acc] hover:underline">
+              <button onclick="switchScreen('creators')" class="text-[10px] font-bold text-[#107acc] hover:underline shrink-0 whitespace-nowrap">
                 View All 5 ➔
               </button>
             </div>
